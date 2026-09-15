@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proposta Comercial · Léia → Ezequiela</title>
+  <meta name="description" content="Proposta comercial para continuidade e expansão de parceria: Produção de Vídeos e Gestão de Social Media." />
+  <meta property="og:title" content="Proposta Comercial · Léia → Ezequiela" />
+  <meta property="og:description" content="Proposta comercial para continuidade e expansão de parceria: Produção de Vídeos e Gestão de Social Media." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+    :root {
+      --bg:         #0A0A0A;       /* fundo principal: preto quase puro */
+      --bg-card:    #111111;       /* fundo de cards e seções elevadas */
+      --bg-subtle:  #161616;       /* fundo de elementos secundários */
+      --red:        #E52222;       /* vermelho principal — ações, destaques, acentos */
+      --red-dark:   #B91C1C;       /* vermelho escuro — hover, gradiente */
+      --red-muted:  rgba(229, 34, 34, 0.12);   /* vermelho translúcido — fundos de tags */
+      --border:     rgba(255, 255, 255, 0.07); /* bordas sutis */
+      --border-red: rgba(229, 34, 34, 0.25);  /* bordas com toque vermelho */
+      --text:       #F5F5F5;       /* texto principal */
+      --text-muted: #737373;       /* texto secundário */
+      --text-dim:   #404040;       /* texto terciário / desabilitado */
+      --white:      #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg);
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 14px;
+      line-height: 1.7;
+      font-weight: 400;
+      color: var(--text);
+      background-color: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Utilitários e Containers */
+    .section-wrapper {
+      width: 100%;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* Badges & Tags */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 10px;
+      background-color: var(--red-muted);
+      color: var(--red);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      line-height: 1;
+      width: fit-content;
+      white-space: nowrap;
+    }
+
+    .badge-solid {
+      background-color: var(--red);
+      color: var(--white);
+    }
+
+    /* Número de Seção & Títulos */
+    .section-number {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-dim);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    .section-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 10px;
+      line-height: 1.6;
+      max-width: 640px;
+    }
+
+    /* Ponto Vermelho para Listas */
+    .red-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--red);
+      flex-shrink: 0;
+      margin-top: 7px;
+    }
+
+    .item-with-dot {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+
+    .item-with-dot span {
+      flex: 1;
+    }
+
+    /* ==========================================================================
+       SEÇÃO 1 — HEADER / HERO
+       ========================================================================== */
+    .hero-section {
+      padding: 80px 60px 64px;
+      background-color: var(--bg);
+    }
+
+    .hero-meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 32px;
+    }
+
+    .meta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      text-align: right;
+    }
+
+    .meta-row {
+      display: flex;
+      justify-content: flex-end;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .meta-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    .meta-value {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    .hero-heading {
+      margin-top: 48px;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      max-width: 800px;
+    }
+
+    .hero-heading .accent-underline {
+      text-decoration: underline;
+      text-decoration-color: var(--red);
+      text-underline-offset: 8px;
+      text-decoration-thickness: 3px;
+    }
+
+    .hero-subtitle {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.7;
+      color: var(--text-muted);
+      max-width: 520px;
+    }
+
+    /* ==========================================================================
+       SEÇÃO 2 — LINHA DIVISORA
+       ========================================================================== */
+    .hero-divider {
+      width: 100%;
+      height: 1px;
+      background-color: var(--red);
+      opacity: 0.4;
+      margin: 0;
+      border: none;
+    }
+
+    /* ==========================================================================
+       SEÇÃO 3 — SOBRE ESTE TRABALHO (Contexto)
+       ========================================================================== */
+    .context-section {
+      padding: 72px 60px 56px;
+      background-color: var(--bg);
+    }
+
+    .context-layout {
+      margin-top: 32px;
+      display: flex;
+      gap: 40px;
+      align-items: stretch;
+    }
+
+    .context-text-col {
+      flex: 0 0 40%;
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .context-stats-col {
+      flex: 0 0 calc(60% - 40px);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .stat-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .stat-number {
+      font-size: 40px;
+      font-weight: 800;
+      color: var(--red);
+      line-height: 1;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+
+    .stat-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.3;
+    }
+
+    /* ==========================================================================
+       SEÇÃO 4 — OBJETIVOS ESTRATÉGICOS
+       ========================================================================== */
+    .objectives-section {
+      padding: 0 60px 72px;
+      background-color: var(--bg);
+    }
+
+    .objectives-header {
+      margin-bottom: 32px;
+    }
+
+    .objectives-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .objective-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--red);
+      border-radius: 8px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .objective-card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .objective-card-text {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ==========================================================================
+       SEÇÃO 5 — SERVIÇOS
+       ========================================================================== */
+    .services-section {
+      padding: 0 60px 72px;
+      background-color: var(--bg);
+    }
+
+    .services-header {
+      margin-bottom: 32px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 36px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .service-card-head {
+      margin-bottom: 24px;
+    }
+
+    .service-card-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--white);
+      margin-top: 14px;
+      line-height: 1.2;
+    }
+
+    .service-card-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .service-deliverables {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 28px;
+      font-size: 13px;
+    }
+
+    .price-block {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      margin-top: auto;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+    }
+
+    .price-currency {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .price-amount {
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1;
+      color: var(--white);
+      letter-spacing: -0.03em;
+    }
+
+    .price-period {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-left: 2px;
+    }
+
+    .service-card-note {
+      background-color: var(--bg-subtle);
+      padding: 14px 16px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       SEÇÃO 6 — ADD-ONS OPCIONAIS
+       ========================================================================== */
+    .addons-section {
+      padding: 0 60px 72px;
+      background-color: var(--bg);
+    }
+
+    .addons-header {
+      margin-bottom: 32px;
+    }
+
+    .addons-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .addon-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .addon-card-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--white);
+      margin-top: 12px;
+      margin-bottom: 8px;
+    }
+
+    .addon-card-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .addon-price-regular {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .addon-price-accent {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--red);
+    }
+
+    /* ==========================================================================
+       SEÇÃO 7 — INVESTIMENTO
+       ========================================================================== */
+    .investment-section {
+      padding: 0 60px 72px;
+      background-color: var(--bg);
+    }
+
+    .investment-header {
+      margin-bottom: 32px;
+    }
+
+    .plans-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .plan-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 36px 32px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .plan-card-featured {
+      border: 1px solid var(--border-red);
+      position: relative;
+    }
+
+    .plan-card-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--white);
+      margin-top: 14px;
+      line-height: 1.2;
+    }
+
+    .plan-card-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      margin-bottom: 24px;
+    }
+
+    .plan-price-wrap {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+
+    .plan-price-label {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .plan-price-value {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--white);
+      letter-spacing: -0.02em;
+    }
+
+    .plan-price-value.highlight-red {
+      color: var(--red);
+    }
+
+    .plan-price-period {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .plan-items-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Tabela de Detalhamento */
+    .table-container {
+      margin-top: 40px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px 32px;
+      overflow-x: auto;
+    }
+
+    .table-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-dim);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .investment-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: left;
+    }
+
+    .investment-table th {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      padding: 0 12px 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .investment-table th:last-child {
+      text-align: right;
+      padding-right: 0;
+    }
+
+    .investment-table td {
+      padding: 16px 12px 16px 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+      vertical-align: middle;
+    }
+
+    .investment-table td:first-child {
+      color: var(--text);
+      font-weight: 500;
+      width: 40%;
+    }
+
+    .investment-table td:nth-child(2) {
+      width: 35%;
+    }
+
+    .investment-table td:last-child {
+      text-align: right;
+      padding-right: 0;
+      width: 25%;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Linhas especiais da tabela */
+    .row-total td {
+      font-size: 14px;
+      font-weight: 700 !important;
+      color: var(--white) !important;
+    }
+
+    .row-total td:last-child {
+      color: var(--red) !important;
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .row-addon td {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-style: normal;
+    }
+
+    .row-separator {
+      border: none !important;
+    }
+
+    .row-separator td {
+      padding: 0 !important;
+      height: 1px;
+      border: none !important;
+      border-top: 1px solid rgba(229, 34, 34, 0.3) !important;
+    }
+
+    /* ==========================================================================
+       SEÇÃO 8 — RODAPÉ
+       ========================================================================== */
+    .footer-section {
+      padding: 64px 60px;
+      border-top: 1px solid var(--border);
+      background-color: var(--bg);
+    }
+
+    .footer-layout {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 32px;
+    }
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .footer-author {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .footer-role {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .footer-validity {
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background-color: var(--red);
+      color: var(--white);
+      padding: 14px 28px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.15s ease;
+      cursor: pointer;
+      border: none;
+      white-space: nowrap;
+    }
+
+    .cta-btn:hover {
+      background-color: var(--red-dark);
+    }
+
+    /* ==========================================================================
+       RESPONSIVIDADE (< 768px)
+       ========================================================================== */
+    @media (max-width: 768px) {
+      .hero-section,
+      .context-section,
+      .objectives-section,
+      .services-section,
+      .addons-section,
+      .investment-section,
+      .footer-section {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .hero-section {
+        padding-top: 48px;
+        padding-bottom: 40px;
+      }
+
+      .hero-meta-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .meta-group {
+        text-align: left;
+      }
+
+      .meta-row {
+        justify-content: flex-start;
+      }
+
+      .hero-heading {
+        font-size: 32px;
+        margin-top: 32px;
+      }
+
+      .context-layout {
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .context-text-col,
+      .context-stats-col {
+        flex: 1 1 100%;
+        width: 100%;
+      }
+
+      .context-stats-col {
+        grid-template-columns: 1fr;
+      }
+
+      .objectives-grid,
+      .services-grid,
+      .addons-grid,
+      .plans-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .service-card,
+      .plan-card {
+        padding: 24px 20px;
+      }
+
+      .table-container {
+        padding: 16px;
+      }
+
+      .footer-layout {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+      }
+
+      .cta-btn {
+        width: 100%;
+      }
+    }
+
+    /* Barra de Ações Rápidas de PDF (oculta na impressão) */
+    .top-action-bar {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background-color: rgba(17, 17, 17, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px;
+    }
+
+    .top-action-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .top-action-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .top-action-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      background-color: var(--red-muted);
+      color: var(--red);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .top-action-btns {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-pdf-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--red);
+      color: var(--white);
+      padding: 8px 18px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.15s ease;
+      cursor: pointer;
+      border: none;
+      white-space: nowrap;
+    }
+
+    .btn-pdf-download:hover {
+      background-color: var(--red-dark);
+    }
+
+    .btn-pdf-print {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--bg-subtle);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .btn-pdf-print:hover {
+      background-color: #202020;
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* ==========================================================================
+       PRINT-FRIENDLY (Ctrl+P / Salvar PDF)
+       ========================================================================== */
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+
+      body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        background-color: var(--bg) !important;
+        color: var(--text) !important;
+      }
+
+      @page {
+        margin: 10mm 12mm;
+        size: A4 portrait;
+      }
+
+      .hero-section,
+      .context-section,
+      .objectives-section,
+      .services-section,
+      .addons-section,
+      .investment-section,
+      .footer-section {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+      }
+
+      .hero-section {
+        padding-top: 24px !important;
+        padding-bottom: 24px !important;
+      }
+
+      .context-section {
+        padding-top: 28px !important;
+        padding-bottom: 28px !important;
+      }
+
+      .objectives-section {
+        page-break-before: always;
+        break-before: page;
+        padding-top: 28px !important;
+        padding-bottom: 28px !important;
+      }
+
+      .services-section {
+        page-break-before: always;
+        break-before: page;
+        padding-top: 28px !important;
+        padding-bottom: 28px !important;
+      }
+
+      .addons-section {
+        page-break-before: always;
+        break-before: page;
+        padding-top: 28px !important;
+        padding-bottom: 28px !important;
+      }
+
+      .investment-section {
+        page-break-before: always;
+        break-before: page;
+        padding-top: 28px !important;
+        padding-bottom: 20px !important;
+      }
+
+      .table-container {
+        page-break-before: always;
+        break-before: page;
+        margin-top: 24px !important;
+      }
+
+      .footer-section {
+        padding-top: 28px !important;
+        padding-bottom: 28px !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+
+      .stat-card,
+      .objective-card,
+      .service-card,
+      .addon-card,
+      .plan-card,
+      tr {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Ações Rápidas (Exibida apenas na tela, oculta no PDF/impressão) -->
+  <div class="top-action-bar no-print" id="pdf-action-bar">
+    <div class="top-action-inner">
+      <div class="top-action-info">
+        <span class="top-action-pill">
+          <span style="width: 6px; height: 6px; border-radius: 50%; background-color: var(--red); display: inline-block;"></span>
+          PDF Disponível
+        </span>
+        <span>Proposta Comercial · Léia &rarr; Ezequiela</span>
+      </div>
+      <div class="top-action-btns">
+        <a href="/proposta-leia-ezequiela.pdf" download="proposta-comercial-leia-ezequiela.pdf" class="btn-pdf-download" id="btn-download-pdf">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Baixar Arquivo PDF
+        </a>
+        <button onclick="window.print()" class="btn-pdf-print" id="btn-print-pdf">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          Imprimir / Salvar via Ctrl+P
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       1. HEADER / HERO
+       ======================================================================== -->
+  <header class="section-wrapper hero-section" id="hero">
+    <div class="container">
+      <div class="hero-meta-bar" id="hero-meta">
+        <div class="badge" id="badge-proposta">PROPOSTA COMERCIAL</div>
+        <div class="meta-group" id="hero-metadata-group">
+          <div class="meta-row">
+            <span class="meta-label">DE</span>
+            <span class="meta-value">Léia</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">PARA</span>
+            <span class="meta-value">Ezequiela · Corretora</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">DATA</span>
+            <span class="meta-value">Setembro · 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="hero-heading" id="hero-title">
+        Presença digital que<br />
+        vende e gera <span class="accent-underline">autoridade.</span>
+      </h1>
+
+      <p class="hero-subtitle" id="hero-description">
+        Uma estratégia criada especialmente para transformar o perfil de Ezequiela em referência no mercado de corretagem — e converter seguidores em clientes.
+      </p>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       2. LINHA DIVISORA VERMELHA
+       ======================================================================== -->
+  <hr class="hero-divider" id="hero-divider-line" />
+
+  <!-- ========================================================================
+       3. SEÇÃO: SOBRE ESTE TRABALHO (Contexto)
+       ======================================================================== -->
+  <section class="section-wrapper context-section" id="contexto">
+    <div class="container">
+      <span class="section-number">01</span>
+      <h2 class="section-title">Contexto</h2>
+
+      <div class="context-layout">
+        <div class="context-text-col" id="context-overview-text">
+          <p>
+            Este documento apresenta a proposta para continuidade e expansão da parceria entre Léia e Ezequiela, com a adição da gestão completa de Social Media ao serviço de produção de vídeos já em andamento.
+          </p>
+        </div>
+
+        <div class="context-stats-col" id="context-stats-row">
+          <div class="stat-card" id="stat-card-videos">
+            <div class="stat-number">8</div>
+            <div class="stat-label">vídeos por mês</div>
+            <div class="stat-sub">serviço ativo</div>
+          </div>
+
+          <div class="stat-card" id="stat-card-posts">
+            <div class="stat-number">3</div>
+            <div class="stat-label">posts por semana</div>
+            <div class="stat-sub">novo serviço</div>
+          </div>
+
+          <div class="stat-card" id="stat-card-reels">
+            <div class="stat-number">1</div>
+            <div class="stat-label">Reels por semana</div>
+            <div class="stat-sub">incluso nos posts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. SEÇÃO: OBJETIVOS ESTRATÉGICOS
+       ======================================================================== -->
+  <section class="section-wrapper objectives-section" id="objetivos">
+    <div class="container">
+      <div class="objectives-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Objetivos Estratégicos</h2>
+        <p class="section-subtitle">
+          Cada ação no perfil terá propósito definido. Sem achismo — só resultado.
+        </p>
+      </div>
+
+      <div class="objectives-grid" id="objectives-cards-grid">
+        <div class="objective-card" id="objective-card-1">
+          <h3 class="objective-card-title">Crescimento de Seguidores</h3>
+          <p class="objective-card-text">
+            Conteúdo estratégico para atrair o público certo: pessoas que buscam um corretor de confiança.
+          </p>
+        </div>
+
+        <div class="objective-card" id="objective-card-2">
+          <h3 class="objective-card-title">Autoridade no Mercado</h3>
+          <p class="objective-card-text">
+            Posicionar Ezequiela como referência em corretagem — quem o cliente procura antes de pesquisar a concorrência.
+          </p>
+        </div>
+
+        <div class="objective-card" id="objective-card-3">
+          <h3 class="objective-card-title">Suporte ao Tráfego Pago</h3>
+          <p class="objective-card-text">
+            Perfil aquecido e ativo aumenta a conversão dos anúncios. O orgânico aquece, o pago converte.
+          </p>
+        </div>
+
+        <div class="objective-card" id="objective-card-4">
+          <h3 class="objective-card-title">Conexão e Confiança</h3>
+          <p class="objective-card-text">
+            Conteúdo humanizado que aproxima, gera identificação e transforma seguidores em clientes fiéis.
+          </p>
+        </div>
+
+        <div class="objective-card" id="objective-card-5">
+          <h3 class="objective-card-title">Consistência de Marca</h3>
+          <p class="objective-card-text">
+            Feed coerente, identidade visual definida e presença contínua — a base de toda estratégia sólida.
+          </p>
+        </div>
+
+        <div class="objective-card" id="objective-card-6">
+          <h3 class="objective-card-title">Engajamento Real</h3>
+          <p class="objective-card-text">
+            Formatos que geram curtidas, salvamentos e compartilhamentos — o que o algoritmo premia de verdade.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. SEÇÃO: SERVIÇOS
+       ======================================================================== -->
+  <section class="section-wrapper services-section" id="servicos">
+    <div class="container">
+      <div class="services-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Serviços</h2>
+      </div>
+
+      <div class="services-grid" id="services-cards-grid">
+        <!-- Card A — Produção de Vídeos -->
+        <div class="service-card" id="service-card-videos">
+          <div>
+            <div class="service-card-head">
+              <span class="badge" id="badge-videos-status">EM ANDAMENTO</span>
+              <h3 class="service-card-title">Produção de Vídeos</h3>
+              <p class="service-card-sub">Serviço em continuidade · renovado</p>
+            </div>
+
+            <div class="service-deliverables" id="service-deliverables-videos">
+              <div class="item-with-dot">
+                <span class="red-dot"></span>
+                <span>8 vídeos editados por mês (pacote base)</span>
+              </div>
+              <div class="item-with-dot">
+                <span class="red-dot"></span>
+                <span>Edição profissional com identidade visual</span>
+              </div>
+              <div class="item-with-dot">
+                <span class="red-dot"></span>
+                <span>Legendas e ajustes para cada formato</span>
+              </div>
+              <div class="item-with-dot">
+                <span class="red-dot"></span>
+                <span>Entrega dentro do prazo combinado</span>
+              </div>
+              <div class="item-with-dot">
+                <span class="red-dot"></span>
+                <span>Vídeos adicionais acima de 8: R$ 15 / unidade</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="price-block" id="service-price-videos">
+              <span class="price-currency">R$</span>
+              <span class="price-amount">300</span>
+              <span class="price-period">/mês</span>
+            </div>
+
+            <div class="service-card-note" id="service-note-videos">
+              Precisa de mais vídeos em algum mês? Cada vídeo extra custa apenas R$ 15 — sem surpresas.
+            </div>
+          </div>
+        </div>
+
+        <!-- Card B — Gestão de Social Media -->
+        <div class="service-card" id="service-card-social-media">
+          <div>
+            <div class="service-card-head">
+              <span class="badge" id="badge-social-status">NOVO</span>
+              <h3 class="service-card-title">Gestão de Social Media</h3>
+              <p class="service-card-sub">Instagram estratégico · novo serviço</p>
+            </div>
+
+            <div class="service-deliverables" id="service-deliverables-social">
+              <div class="item-with-dot">
+                <span class="red-dot"></span>
+                <span>3 posts por semana no feed (~12/mês)</span>
+              </div>
+              <div class="item-with-dot">
+                <span class="red-dot"></span>
+                <span>1 Reels por semana (incluso nos 3 posts)</span>
+              </div>
+              <div class="item-with-dot">
+                <span class="red-dot"></span>
+                <span>Planejamento mensal de conteúdo</span>
+              </div>
+              <div class="item-with-dot">
+                <span class="red-dot"></span>
+                <span>Criação de arte + legenda com copy persuasivo</span>
+              </div>
+              <div class="item-with-dot">
+                <span class="red-dot"></span>
+                <span>Hashtags e horários otimizados pelo algoritmo</span>
+              </div>
+              <div class="item-with-dot">
+                <span class="red-dot"></span>
+                <span>Relatório mensal de desempenho</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="price-block" id="service-price-social">
+              <span class="price-currency">R$</span>
+              <span class="price-amount">500</span>
+              <span class="price-period">/mês</span>
+            </div>
+
+            <div class="service-card-note" id="service-note-social">
+              O conteúdo orgânico aquece o perfil e eleva a taxa de conversão dos anúncios pagos — os dois se complementam.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. SEÇÃO: ADD-ONS OPCIONAIS
+       ======================================================================== -->
+  <section class="section-wrapper addons-section" id="addons">
+    <div class="container">
+      <div class="addons-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Add-ons Opcionais</h2>
+        <p class="section-subtitle">
+          Serviços que podem ser adicionados ao pacote a qualquer momento.
+        </p>
+      </div>
+
+      <div class="addons-grid" id="addons-cards-grid">
+        <!-- Add-on 1 — Stories Diários -->
+        <div class="addon-card" id="addon-card-stories">
+          <div>
+            <span class="badge" id="badge-addon-stories">OPCIONAL</span>
+            <h3 class="addon-card-title">Stories Diários</h3>
+            <p class="addon-card-desc">
+              Stories estratégicos para manter o perfil ativo todos os dias, ampliar o alcance das postagens e criar conexão diária com os seguidores.
+            </p>
+          </div>
+          <div>
+            <span class="addon-price-regular" id="addon-price-stories">R$ 300 / mês</span>
+          </div>
+        </div>
+
+        <!-- Add-on 2 — Gestão de Comentários -->
+        <div class="addon-card" id="addon-card-comments">
+          <div>
+            <span class="badge" id="badge-addon-comments">OPCIONAL</span>
+            <h3 class="addon-card-title">Gestão de Comentários</h3>
+            <p class="addon-card-desc">
+              Resposta ativa aos comentários e mensagens diretas — fortalece o relacionamento, aumenta a confiança e sinaliza presença para o algoritmo.
+            </p>
+          </div>
+          <div>
+            <span class="addon-price-accent" id="addon-price-comments">A combinar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. SEÇÃO: INVESTIMENTO
+       ======================================================================== -->
+  <section class="section-wrapper investment-section" id="investimento">
+    <div class="container">
+      <div class="investment-header">
+        <span class="section-number">05</span>
+        <h2 class="section-title">Investimento</h2>
+        <p class="section-subtitle">
+          Comece com o que faz sentido agora e evolua no seu ritmo.
+        </p>
+      </div>
+
+      <!-- Parte 1 — Dois planos em cards -->
+      <div class="plans-grid" id="plans-cards-grid">
+        <!-- Plano Base -->
+        <div class="plan-card" id="plan-card-base">
+          <div>
+            <span class="badge" id="badge-plan-base">PLANO BASE</span>
+            <h3 class="plan-card-title">Vídeos + Social Media</h3>
+            <p class="plan-card-sub">Produção de vídeos + gestão de postagens</p>
+          </div>
+
+          <div class="plan-price-wrap" id="plan-price-wrap-base">
+            <span class="plan-price-label">R$</span>
+            <span class="plan-price-value">800</span>
+            <span class="plan-price-period">/ mês</span>
+          </div>
+
+          <div class="plan-items-list" id="plan-items-base">
+            <div class="item-with-dot">
+              <span class="red-dot"></span>
+              <span>8 vídeos editados por mês</span>
+            </div>
+            <div class="item-with-dot">
+              <span class="red-dot"></span>
+              <span>+R$ 15 por vídeo adicional acima de 8</span>
+            </div>
+            <div class="item-with-dot">
+              <span class="red-dot"></span>
+              <span>3 posts/semana no feed (sendo 1 Reels)</span>
+            </div>
+            <div class="item-with-dot">
+              <span class="red-dot"></span>
+              <span>Planejamento, artes e copy incluídos</span>
+            </div>
+            <div class="item-with-dot">
+              <span class="red-dot"></span>
+              <span>Relatório mensal de resultados</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plano Completo -->
+        <div class="plan-card plan-card-featured" id="plan-card-completo">
+          <div>
+            <span class="badge badge-solid" id="badge-plan-completo">PLANO COMPLETO</span>
+            <h3 class="plan-card-title">Vídeos + Social Media + Stories</h3>
+            <p class="plan-card-sub">Tudo do Plano Base + stories estratégicos diários</p>
+          </div>
+
+          <div class="plan-price-wrap" id="plan-price-wrap-completo">
+            <span class="plan-price-label">R$</span>
+            <span class="plan-price-value highlight-red">1.100</span>
+            <span class="plan-price-period">/ mês</span>
+          </div>
+
+          <div class="plan-items-list" id="plan-items-completo">
+            <div class="item-with-dot">
+              <span class="red-dot"></span>
+              <span>Tudo do Plano Base</span>
+            </div>
+            <div class="item-with-dot">
+              <span class="red-dot"></span>
+              <span>Stories estratégicos todos os dias</span>
+            </div>
+            <div class="item-with-dot">
+              <span class="red-dot"></span>
+              <span>Perfil 100% ativo — feed + stories</span>
+            </div>
+            <div class="item-with-dot">
+              <span class="red-dot"></span>
+              <span>Maior alcance orgânico e engajamento</span>
+            </div>
+            <div class="item-with-dot">
+              <span class="red-dot"></span>
+              <span>Suporte reforçado ao tráfego pago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parte 2 — Tabela de detalhamento -->
+      <div class="table-container" id="investment-table-wrap">
+        <div class="table-title">Detalhamento Comparativo</div>
+        <table class="investment-table" id="investment-breakdown-table">
+          <thead>
+            <tr>
+              <th scope="col">SERVIÇO</th>
+              <th scope="col">DETALHES</th>
+              <th scope="col">VALOR/MÊS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Produção de Vídeos</td>
+              <td>8 vídeos · extras a R$ 15/un</td>
+              <td>R$ 300,00</td>
+            </tr>
+            <tr>
+              <td>Social Media (posts)</td>
+              <td>3 posts/sem + 1 Reels/sem</td>
+              <td>R$ 500,00</td>
+            </tr>
+            <tr class="row-separator">
+              <td colspan="3"></td>
+            </tr>
+            <tr class="row-total" id="table-row-base">
+              <td>PLANO BASE</td>
+              <td></td>
+              <td>R$ 800,00</td>
+            </tr>
+            <tr class="row-separator">
+              <td colspan="3"></td>
+            </tr>
+            <tr class="row-addon">
+              <td>Add-on: Stories Diários</td>
+              <td>Opcional</td>
+              <td>+ R$ 300,00</td>
+            </tr>
+            <tr class="row-addon">
+              <td>Add-on: Comentários</td>
+              <td>Opcional · a combinar</td>
+              <td>A combinar</td>
+            </tr>
+            <tr class="row-separator">
+              <td colspan="3"></td>
+            </tr>
+            <tr class="row-total" id="table-row-completo">
+              <td>PLANO COMPLETO</td>
+              <td>Base + Stories</td>
+              <td>R$ 1.100,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. RODAPÉ
+       ======================================================================== -->
+  <footer class="section-wrapper footer-section" id="rodape">
+    <div class="container footer-layout">
+      <div class="footer-brand" id="footer-branding">
+        <div class="footer-author">Léia</div>
+        <div class="footer-role">Criação de Conteúdo &amp; Gestão de Social Media</div>
+        <div class="footer-validity">Esta proposta é válida por 7 dias a partir do envio.</div>
+      </div>
+
+      <div id="footer-actions">
+        <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="cta-btn" id="cta-button">
+          Vamos conversar &rarr;
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
